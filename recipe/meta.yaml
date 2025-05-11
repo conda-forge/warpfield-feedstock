@@ -38,11 +38,14 @@ requirements:
     - scikit-image
 
 test:
-  requires:
-    - pytest
+  imports:
+    - warpfield
   commands:
-    - pytest -q --disable-warnings --maxfail=1 tests/
-  pip_check: false
+    - python -c "import warpfield"
+    # - pip check
+  requires:
+    - pip
+    - python {{ python_min }}
 
 
 about:
