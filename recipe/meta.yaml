@@ -32,8 +32,10 @@ requirements:
     - h5py
     - hdf5plugin
     - nibabel
-    - pydicom
     - tifffile
+    - imageio
+    - imageio-ffmpeg
+    - scikit-image
 
 test:
   imports:
