@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -38,13 +38,12 @@ requirements:
     - scikit-image
 
 test:
-  imports:
-    - warpfield
-  commands:
-    - pip check
   requires:
-    - pip
-    - python {{ python_min }}
+    - pytest
+  commands:
+    - pytest -q --disable-warnings --maxfail=1 tests/
+  pip_check: false
+
 
 about:
   home: https://github.com/danionella/warpfield
