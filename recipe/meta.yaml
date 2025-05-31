@@ -33,6 +33,8 @@ requirements:
     - hdf5plugin
     - nibabel
     - tifffile
+    - pynrrd
+    - zarr
     - imageio
     - imageio-ffmpeg
     - scikit-image
