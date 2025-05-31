@@ -1,5 +1,5 @@
 {% set name = "warpfield" %}
-{% set version = "0.0.6" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/warpfield-{{ version }}.tar.gz
-  sha256: db6409331ff2b17526871e71b9fd73dcecf180d83ecd8e4c6e5424548c5a8f0a
+  sha256: 0221da38fc88b45f243de8d343607e0f635d5da69ed56cb60640b88c36e02ecc
 
 build:
   noarch: python
@@ -33,6 +33,8 @@ requirements:
     - hdf5plugin
     - nibabel
     - tifffile
+    - pynrrd
+    - zarr
     - imageio
     - imageio-ffmpeg
     - scikit-image
