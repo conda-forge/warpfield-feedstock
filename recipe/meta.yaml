@@ -1,5 +1,5 @@
 {% set name = "warpfield" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/warpfield-{{ version }}.tar.gz
-  sha256: 0abf104a1b9ffa8378fa434600057e6517dffeac76957f472b8e7be70279be11
+  sha256: 2de75203f345f8ab9d962d3a16ad8daa19a52d36feefbdf4e5911d5b0203e315
 
 build:
   noarch: python
